@@ -93,9 +93,12 @@ function startHeartAnimation() {
 })(jQuery);
 
 function timeElapse(date){
+	let now = new Date();
+	let the_day = new Date(2016, 8 - 1, 9, 21, 0, 0);
+	let days=Math.floor((now-the_day)/86400000);
+
 	var current = Date();
-	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
-	var days = Math.floor(seconds / (3600 * 24));
+	var seconds = (Date.parse(current) - the_day) / 1000;
 	seconds = seconds % (3600 * 24);
 	var hours = Math.floor(seconds / 3600);
 	if (hours < 10) {
