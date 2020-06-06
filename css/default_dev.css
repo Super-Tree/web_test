@@ -94,6 +94,15 @@ body {
 	color: #3f7f5f;
 }
 
+#pic {
+	float: left;
+	width: 440px;
+	height: 400px;
+	color: #333;
+	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+	font-size: 12px;
+}
+
 #copyright{
 	margin-top: 10px;
 	text-align: center;

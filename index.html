@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="bookmark"href="favicon.ico" />
+	<link rel="shortcut icon" href="Rings.ico" />
+	<link rel="bookmark"href="Rings.ico" />
 	<title>Our Love Story</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<style type="text/css">
@@ -11,13 +11,30 @@
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
 	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link href="css/default_dev.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
     <script type="text/javascript" src="js/functions_dev.js"></script>
+	<script type="text/javascript">
+		<!--
+		var password="";
+		password=prompt('安全问题: 宠物的名字，请输入小写拼音:','');
+		if (password != 'mudong')
+			{
+				alert("密码不正确,无法进入本站!!");
+				window.opener=null;
+				window.close();
+			}
+		//-->
+	</script>
+	<script src="js/music.js" type="text/javascript" charset="utf-8"></script>
+<!--	<embed src="bgm/yujian.mp3" autostart="true" loop="true" hidden="true"></embed>-->
 </head>
 
 <body>
+	<audio id="music" controls="controls" style='display:none'>
+	<source src="bgm/yujian.mp3" type="audio/mpeg">
+	</audio>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
@@ -64,7 +81,7 @@
 		</div>
 		<div id="copyright">
 			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+			Copyright © 2011 <a href='http://ourstory.link'>hexindong</a> 2009-2011
 		</div>
 	</div>
 	<script type="text/javascript">
